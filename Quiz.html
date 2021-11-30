@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        .footer{
+            padding: 1rem;
+            margin-bottom: 0px;
+            bottom: 0;
+            /* position: absolute; */
+            width: 100%;
+            background-color: floralwhite;
+        }
+    section button{
+            padding: 1rem;
+            margin: 1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(187, 203, 235);
+            border-radius: 9%;
+            width: 10%;
+            border-color: dodgerblue;
+            text-justify: distribute-all-lines;
+            font-style: italic;
+            font-size: 100%;
+            text-align: center;
+        }
+        .content div{
+            size: 7px;
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem;
+        }
+        header{
+            font-size: 3rem;
+            padding: 1rem;
+            text-align: center;
+            background-color: rgb(187, 203, 235);
+            margin-bottom: 2rem;
+        }
+        #output-quiz{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 1rem;
+            text-align: center;
+            color: mediumseagreen;
+            /* background-color: rgb(187, 203, 235); */
+            margin: 1rem;
+            font-size: 2rem;
+        }
+        .quiz-container{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            text-align: center;
+            padding: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: floralwhite;  
+        }
+        nav{
+            background-color: rgb(187, 203, 235);;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav button{
+            background-color:rgb(187, 203, 235);
+            border-radius: 9%;
+            border-color: rgb(187, 203, 235);
+            width: 12%;
+            font-size: 100%;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        nav a{
+            padding: 1rem;
+            margin: 1rem;
+        }
+        div{
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html"> <button> Triangle</button></a>
+        <a href="./Hypotenuse.html"><button>  Hypotenuse  </button> </a>
+        <a href="./Quiz.html"><button>  Quiz ?</button> </a>
+        <a href="./Area.html"><button>  Area</button>  </a>
+    </nav>
+    <header>Quiz ? </header>
+
+    <form class="quiz-form">
+        <div class="quiz-container">
+            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <label><input type="radio" name="questone" value="45"/>45°</label>
+            <label><input type="radio" name="questone" value="60"/>60°</label>
+            <label><input type="radio" name="questone" value="90"/>90°</label>
+        </div>
+        <div class="quiz-container">
+            <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+            <label><input type="radio" name="questtwo" value="acute"/> acute </label>
+            <label><input type="radio" name="questtwo" value="obtuse"/>obtuse</label>
+            <label><input type="radio" name="questtwo" value="right"/>right angle</label>
+        </div>
+    </form>
+  
+    <button style="font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 1rem;" id="submit-btn"> Submit Answer</button>
+
+<br/>
+    <div id="output-quiz"></div>
+    <div class="footer">
+        <hr/>
+        <section class="alt" style=" text-align: center;">
+            <h2 style=" text-align: center;color: #002366;">Social</h2>
+        
+                <a href="https://twitter.com/tarunsankhla21" target="_blank" rel="noopener noreferrer" ><i class="fa fa-twitter"></i><span class="label"> <button> Twitter</button></span></a>
+        &nbsp;	<a href="https://tarunsankhla.hashnode.dev/" target="_blank" rel="noopener noreferrer"><i class="fa fa-book fa-spin"></i><span class="label"><button>  Blog</button></span></a>
+    
+        &nbsp;<a href="https://www.linkedin.com/in/tarun-sankhla/" target="_blank" rel="noopener noreferrer" ><i class="fa fa-linkedin"></i><span class="label"> <button> Linkedin</button></span></a>
+        &nbsp;<a href="https://github.com/tarunsankhla" target="_blank" rel="noopener noreferrer" ><i class="fa fa-github"></i><span class="label"> <button>  GitHub</button></span></a>	
+        &nbsp;<a href="https://linktr.ee/tarunsank" target="_blank" rel="noopener noreferrer"><i class="fa fa-linode"></i><span class="label"> <button>  Linktree</button></span></a>
+        
+        </section>
+    </div>
+    <script src="./quiz.js"></script>
+</body>
+</html>
